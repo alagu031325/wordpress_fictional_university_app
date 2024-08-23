@@ -1,0 +1,27 @@
+# Ignore everything except the wp-content directory
+
+/public/wp-admin/
+/public/wp-includes/
+/public/*.php
+
+# Within wp-content, ignore:
+/public/wp-content/plugins/
+/public/wp-content/uploads/
+/public/wp-content/upgrade/
+/public/wp-content/cache/
+/public/wp-content/index.php
+
+# Optionally, include specific plugins or themes
+#!wp-content/plugins/my-plugin/
+/public/wp-content/themes/fictional-university-theme/node_modules/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore sensitive files
+wp-config.php
+license.txt
+.htaccess
+
+/sql/local.sql
